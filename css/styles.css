@@ -75,48 +75,29 @@ body {
   outline-offset: 3px;
 }
 
-.header__toggle-icon {
-  position: relative;
-  display: block;
+.header__toggle-bars {
+  display: grid;
   width: 20px;
+  gap: 5px;
+}
+
+.header__toggle-bars span {
   height: 2px;
-  background-color: currentColor;
   border-radius: 999px;
-  transition: background-color 0.2s ease;
-}
-
-.header__toggle-icon::before,
-.header__toggle-icon::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  width: 20px;
-  height: 2px;
   background-color: currentColor;
-  border-radius: 999px;
-  transition: transform 0.2s ease, top 0.2s ease;
+  transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-.header__toggle-icon::before {
-  top: -6px;
+.header--menu-open .header__toggle-bars span:nth-child(1) {
+  transform: translateY(7px) rotate(45deg);
 }
 
-.header__toggle-icon::after {
-  top: 6px;
+.header--menu-open .header__toggle-bars span:nth-child(2) {
+  opacity: 0;
 }
 
-.header--menu-open .header__toggle-icon {
-  background-color: transparent;
-}
-
-.header--menu-open .header__toggle-icon::before {
-  top: 0;
-  transform: rotate(45deg);
-}
-
-.header--menu-open .header__toggle-icon::after {
-  top: 0;
-  transform: rotate(-45deg);
+.header--menu-open .header__toggle-bars span:nth-child(3) {
+  transform: translateY(-7px) rotate(-45deg);
 }
 
 .logo {
