@@ -13,13 +13,20 @@
   <div class="page">
     <header class="header">
       <div class="logo">Mandalachartable Trust</div>
-      <nav class="nav">
+      <button class="header__toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+        <span class="visually-hidden">Toggle navigation</span>
+        <span class="header__toggle-icon" aria-hidden="true"></span>
+      </button>
+      <nav class="nav" id="primary-navigation">
         <a href="#about">About</a>
         <a href="#team">Team</a>
         <a href="#focus">Focus Areas</a>
         <a href="#transparency">Transparency</a>
         <a href="#connect">Connect</a>
       </nav>
+      <div class="breadcrumb" id="breadcrumb" aria-label="Current section">
+        Home
+      </div>
       <button class="donate-btn">Donate</button>
     </header>
 
@@ -186,7 +193,7 @@
       <div class="footer__content">
         <div>
           <h3>Registered Office</h3>
-          <p>12 Harmony Lane, Kolkata 700016<br>Email: contact@mandalacharity.org<br>Phone: +91 98765 43210</p>
+          <p>JRC Palladio, Sarjapura, Bangalore 562125<br>Email: contact@mandalacharity.org<br>Phone: +91 98765 43210</p>
         </div>
         <div>
           <h3>Stay Updated</h3>
