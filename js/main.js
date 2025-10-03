@@ -35,7 +35,27 @@ document.addEventListener('DOMContentLoaded', () => {
         logoEl.src = brand.logoSrc;
       }
     }
-    setText('header-cta', brand.ctaLabel || '');
+    const ctaEl = document.getElementById('header-cta');
+    if (ctaEl) {
+      ctaEl.textContent = brand.ctaLabel || '';
+      ctaEl.type = 'button';
+      if (brand.ctaHref) {
+        ctaEl.onclick = (event) => {
+          event.preventDefault();
+          const targetId = brand.ctaHref.startsWith('#') ? brand.ctaHref.slice(1) : brand.ctaHref;
+          const sectionEl = document.getElementById(targetId);
+          if (sectionEl && typeof sectionEl.scrollIntoView === 'function') {
+            sectionEl.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          } else if (brand.ctaHref.startsWith('#')) {
+            window.location.hash = brand.ctaHref;
+          } else {
+            window.location.href = brand.ctaHref;
+          }
+        };
+      } else {
+        ctaEl.onclick = null;
+      }
+    }
   };
 
   const renderNav = (navItems) => {
@@ -265,6 +285,67 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   };
 
+  const renderSupport = (support) => {
+    if (!support) return;
+    setText('support-heading', support.heading || '');
+    setText('support-intro', support.intro || '');
+
+    const gridEl = document.getElementById('support-grid');
+    if (gridEl) {
+      gridEl.innerHTML = '';
+      (support.options || []).forEach(({ title, description }) => {
+        if (!title && !description) return;
+        const article = document.createElement('article');
+        if (title) {
+          const titleEl = document.createElement('h3');
+          titleEl.textContent = title;
+          article.appendChild(titleEl);
+        }
+        if (description) {
+          const descriptionEl = document.createElement('p');
+          descriptionEl.textContent = description;
+          article.appendChild(descriptionEl);
+        }
+        gridEl.appendChild(article);
+      });
+    }
+
+    const contactEl = document.getElementById('support-contact');
+    if (contactEl) {
+      contactEl.innerHTML = '';
+      if (support.contactNote) {
+        const noteEl = document.createElement('p');
+        noteEl.textContent = support.contactNote;
+        contactEl.appendChild(noteEl);
+      }
+
+      if (support.contactEmail || support.contactPhone) {
+        const actionsEl = document.createElement('p');
+        actionsEl.className = 'support__contact-actions';
+        if (support.contactEmail) {
+          const emailLink = document.createElement('a');
+          emailLink.href = `mailto:${support.contactEmail}`;
+          emailLink.textContent = support.contactEmail;
+          actionsEl.appendChild(emailLink);
+        }
+
+        if (support.contactEmail && support.contactPhone) {
+          const separator = document.createTextNode(' • ');
+          actionsEl.appendChild(separator);
+        }
+
+        if (support.contactPhone) {
+          const phoneLink = document.createElement('a');
+          phoneLink.href = `tel:${support.contactPhone}`;
+          phoneLink.textContent = support.contactPhone;
+          actionsEl.appendChild(phoneLink);
+        }
+
+        contactEl.appendChild(actionsEl);
+      }
+    }
+  };
+
   const renderFooter = (footer) => {
     if (!footer) return;
     setText('footer-office-heading', footer.officeHeading || '');
@@ -313,6 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
     renderObjects(content.objects);
     renderTrustees(content.trustees);
     renderTransparency(content.transparency);
+    renderSupport(content.support);
     renderFooter(content.footer);
   }
 

@@ -3,7 +3,8 @@ window.siteContent = {
     name: 'Mandala Charitable Trust',
     logoAlt: 'Mandala Charitable Trust logo',
     logoSrc: 'img/mandala-logo.jpg',
-    ctaLabel: 'Support our work'
+    ctaLabel: 'Support our work',
+    ctaHref: '#support'
   },
   nav: [
     { href: '#about', label: 'About' },
@@ -11,6 +12,7 @@ window.siteContent = {
     { href: '#objects', label: 'Trust Objects' },
     { href: '#trustees', label: 'Trustees' },
     { href: '#transparency', label: 'Transparency' },
+    { href: '#support', label: 'Support' },
     { href: '#connect', label: 'Connect' }
   ],
   hero: {
@@ -24,6 +26,7 @@ window.siteContent = {
     ],
     actions: [
       { href: '#programs', label: 'See our programs', variant: 'primary' },
+      { href: '#support', label: 'Support our work', variant: 'ghost' },
       { href: '#transparency', label: 'Read our mandate', variant: 'ghost' }
     ],
     imageAlt: 'Children learning and playing at the daycare centre',
@@ -141,6 +144,27 @@ window.siteContent = {
         ]
       }
     ]
+  },
+  support: {
+    heading: 'Support Our Work',
+    intro: 'Your contribution keeps our daycare running and helps migrant families build stability. Choose a way to help and reach out so we can guide you through the next steps.',
+    options: [
+      {
+        title: 'Donate to daily operations',
+        description: 'Fund meals, learning materials, and caregiver stipends with a one-time or monthly transfer.'
+      },
+      {
+        title: 'Sponsor a meal service',
+        description: 'Cover the cost for breakfast, lunch, and evening snacks for all children on a day that matters to you.'
+      },
+      {
+        title: 'Volunteer your time',
+        description: 'Offer reading sessions, health workshops, or festival support alongside resident trustees.'
+      }
+    ],
+    contactNote: 'Reach out so we can share bank details and ways to help right away.',
+    contactEmail: 'mandala.net.in@gmail.com',
+    contactPhone: '9606025415'
   },
   footer: {
     officeHeading: 'Registered Office',
