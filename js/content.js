@@ -112,7 +112,7 @@ window.siteContent = {
       'Haimanti Sarkar',
       'Phani Chinguluri',
       'Senthil Kumar',
-      'Sreenivas',
+      'SREENIVASULU K',
     ]
   },
   transparency: {
