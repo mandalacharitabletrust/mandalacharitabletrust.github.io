@@ -17,8 +17,8 @@ window.siteContent = {
   ],
   hero: {
     eyebrow: 'Registered Charitable Trust',
-    title: 'Because Their Children Deserve a Future.',
-    description: 'Mandala Charitable Trust is a non-profit initiative dedicated to the well-being, education, and dignity of children from migrant and underprivileged families. Guided by compassion and a spirit of service, our trustees and volunteers work together to support these children and their families through care, learning opportunities, and community development.',
+    title: 'Empowering Children, Building Futures.',
+    description: 'The Mandala Charitable Trust deed is registered under Sections 2(15) and 80G of the Income Tax Act, 1961. Mandala Charitable Trust is dedicated to uplifting children from migrant and underserved families. Through compassionate care, meaningful education, and community support, we help build brighter futures—one child at a time.',
     meta: [
       { label: 'Founded', value: 'August 2023' },
       { label: 'Trustees', value: '10 residents of JRC Palladio' },
@@ -57,54 +57,47 @@ window.siteContent = {
         icon: 'img/icon-education.svg',
         iconAlt: 'Daycare icon',
         title: 'Holistic Daycare',
-        description: 'Safe, nurturing care for children below six years living at construction sites around JRC Palladio.',
+        description: 'We provide a safe, engaging daycare for children under six at construction sites near JRC Palladio. Our structured day includes play-based learning, nutritious daily meals, and warm support from locally hired teachers and caretakers.',
         points: [
-          'Structured day from 9 AM to 4 PM with circle time and play-based learning',
-          'Nutritious breakfast, lunch, and evening snacks every day',
-          'Teachers and caretakers (aayas) hired from the local community'
-        ]
+          '']
       },
       {
         icon: 'img/icon-health.svg',
         iconAlt: 'Education icon',
-        title: 'Education Pathways',
-        description: 'Bridging children into formal schooling and ensuring they stay enrolled with confidence.',
+        title: 'Pathways to Education',
+        description: 'We support school enrollments and ongoing learning, providing children with uniforms, stationery, and guidance. Special attention ensures children transition seamlessly into Handenahalli Government School and stay confident in their education journey.',
         points: [
-          'Enrolment drives with Government School, Handenahalli',
-          'Complete school kits: uniforms, bags, stationery, and seasonal essentials',
-          'Learning support sessions for children who miss school during relocations'
+          ''
         ]
       },
       {
         icon: 'img/icon-livelihood.svg',
         iconAlt: 'Community icon',
         title: 'Community and Culture',
-        description: 'Celebrating moments that help families feel welcome and respected within the neighbourhood.',
+        description: 'We celebrate festivals, organize events, and distribute essential supplies, ensuring every family feels welcomed and valued. Our team responds quickly to emergencies with relief and care.',
         points: [
-          'Festival gatherings for Diwali, Christmas, and local observances',
-          'Distribution of new clothes, gifts, and hygiene kits',
-          'Relief support during emergencies or unexpected crises'
+          ''
         ]
       }
     ]
   },
   objects: {
-    heading: 'Objects Of The Trust',
-    intro: 'The Mandala Charitable Trust deed is registered under Sections 2(15) and 80G of the Income Tax Act, 1961. Our founding document empowers us to pursue the following objectives:',
+    heading: 'Our Mission & Objectives',
+    intro: 'We exist to:',
     items: [
-      'Provide relief to people experiencing poverty through emergency support and basic amenities.',
-      'Advance education, including early childhood development, schools, training institutes, and libraries.',
-      'Promote health care access and medical relief for vulnerable communities.',
-      'Preserve the environment by supporting rainwater harvesting, lake conservation, and green initiatives.',
-      'Support cultural, social, and sports programmes that nurture talent and community wellbeing.',
-      'Offer financial assistance, scholarships, and rehabilitation for individuals in distress.',
-      'Respond to natural calamities with immediate and long-term relief efforts.',
-      'Mobilise donations, grants, and endowments to sustain charitable activities without personal benefit to trustees.'
+      'Relieve poverty and provide emergency support',
+      'Advance early education and lifelong learning',
+      'Expand healthcare, nutrition, and wellbeing',
+      'Promote environmental stewardship',
+      'Encourage cultural celebration and social integration',
+      'Offer scholarships and financial aid',
+      'Provide rapid response during crises',
+      'Raise sustainable funds, ensuring every rupee goes directly to charitable work'
     ]
   },
   trustees: {
-    heading: 'Trustees',
-    intro: 'Mandala Charitable Trust is stewarded by residents of JRC Palladio who volunteer their time, resources, and expertise.',
+    heading: 'Meet Our Trustees',
+    intro: 'A group of passionate volunteers, united in service:',
     members: [
       'Anandappan C',
       'Anandshekar',
@@ -113,7 +106,7 @@ window.siteContent = {
       'Harish Mohan',
       'Jayanandan P',
       'Haimanti Sarkar',
-      'Phani Chinguluri',
+      'Phani Chiguluri',
       'Senthil Kumar',
       'SREENIVASULU K',
     ]
@@ -146,23 +139,23 @@ window.siteContent = {
     ]
   },
   support: {
-    heading: 'Support Our Work',
-    intro: 'Your contribution keeps our daycare running and helps migrant families build stability. Choose a way to help and reach out so we can guide you through the next steps.',
+    heading: 'How You Can Help',
+    intro: 'Choose a way to help and reach out so we can guide you through the next steps.',
     options: [
       {
-        title: 'Donate to daily operations',
-        description: 'Fund meals, learning materials, and caregiver stipends with a one-time or monthly transfer.'
+        title: 'Donate',
+        description: 'Support daily operations or sponsor meals to keep our daycare running. Every contribution feeds, educates, and empowers a child.'
       },
       {
-        title: 'Sponsor a meal service',
-        description: 'Cover the cost for breakfast, lunch, and evening snacks for all children on a day that matters to you.'
+        title: 'Get Involved',
+        description: 'Partner with us by donating supplies, sponsoring meals, or simply spreading the word.'
       },
       {
-        title: 'Volunteer your time',
-        description: 'Offer reading sessions, health workshops, or festival support alongside resident trustees.'
+        title: 'Volunteer',
+        description: 'Share your talents—host workshops, read stories, or join festival events.'
       }
     ],
-    contactNote: 'Reach out so we can share bank details and ways to help right away.',
+    contactNote: 'Contact us for details on how to contribute:',
     contactEmail: 'mandala.net.in@gmail.com',
     contactPhone: '9606025415'
   },
@@ -181,6 +174,9 @@ window.siteContent = {
     contactPhone: '9606025415',
     contactEmail: 'mandala.net.in@gmail.com',
     copyName: 'Mandala Charitable Trust',
-    copyLegal: 'Registered under Indian Trusts Act, 1882'
+    copyLegal: 'Registered under Indian Trusts Act, 1882',
+    copyMaintainerLabel: 'The website is maintained by',
+    copyMaintainerName: 'MeghGen Technologies',
+    copyMaintainerUrl: 'https://meghgen.ai'
   }
 };

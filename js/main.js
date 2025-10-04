@@ -383,6 +383,23 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setText('footer-copy-name', footer.copyName || '');
     setText('footer-copy-legal', footer.copyLegal || '');
+
+    const maintainerEl = document.getElementById('footer-copy-maintainer');
+    if (maintainerEl) {
+      maintainerEl.innerHTML = '';
+      const { copyMaintainerLabel, copyMaintainerName, copyMaintainerUrl } = footer;
+      if (copyMaintainerLabel && copyMaintainerName && copyMaintainerUrl) {
+        maintainerEl.appendChild(document.createTextNode(`${copyMaintainerLabel} `));
+        const linkEl = document.createElement('a');
+        linkEl.href = copyMaintainerUrl;
+        linkEl.rel = 'noopener noreferrer';
+        linkEl.target = '_blank';
+        linkEl.textContent = copyMaintainerName;
+        maintainerEl.appendChild(linkEl);
+      } else if (copyMaintainerName) {
+        maintainerEl.textContent = copyMaintainerName;
+      }
+    }
   };
 
   if (content) {
