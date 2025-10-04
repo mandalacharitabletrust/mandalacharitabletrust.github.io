@@ -17,8 +17,8 @@ window.siteContent = {
   ],
   hero: {
     eyebrow: 'Registered Charitable Trust',
-    title: 'Caring for the children of migrant workers at JRC Palladio.',
-    description: 'Mandala Charitable Trust offers safe daycare, early learning, and holistic support for families of construction workers in Sarjapura, Bengaluru. We operate entirely through resident volunteers and donations from our community.',
+    title: 'Because Their Children Deserve a Future.',
+    description: 'Mandala Charitable Trust is a non-profit initiative dedicated to the well-being, education, and dignity of children from migrant and underprivileged families. Guided by compassion and a spirit of service, our trustees and volunteers work together to support these children and their families through care, learning opportunities, and community development.',
     meta: [
       { label: 'Founded', value: 'August 2023' },
       { label: 'Trustees', value: '10 residents of JRC Palladio' },
@@ -38,15 +38,15 @@ window.siteContent = {
   stats: [
     {
       heading: '9 AM - 4 PM',
-      body: 'Daily daycare that keeps children safe while their parents earn a livelihood onsite.'
+      body: 'Safe and engaging daycare that looks after children while their parents work.'
     },
     {
       heading: '3 Meals Daily',
-      body: 'Nutritious breakfast, lunch, and snacks prepared fresh for every child in our centre.'
+      body: 'Nutritious breakfast, lunch, and snacks served daily to every child in our care.'
     },
     {
       heading: '10+ School Enrolments',
-      body: 'Children mainstreamed into Handenahalli Government School with books, uniforms, and school kits.'
+      body: 'Children enrolled in Handenahalli Government School with full support — books, uniforms, and learning kits to help them thrive.'
     }
   ],
   programs: {
