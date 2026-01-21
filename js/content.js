@@ -21,7 +21,7 @@ window.siteContent = {
     description: 'The Mandala Charitable Trust deed is registered under Sections 2(15) and 80G of the Income Tax Act, 1961. Mandala Charitable Trust is dedicated to uplifting children from migrant and underserved families. Through compassionate care, meaningful education, and community support, we help build brighter futures—one child at a time.',
     meta: [
       { label: 'Founded', value: 'August 2023' },
-      { label: 'Trustees', value: '10 residents of JRC Palladio' },
+      { label: 'Trustees', value: '9 Residents of JRC Palladio' },
       { label: 'Registration No', value: 'SRJ-4-00284-2023-24' }
     ],
     actions: [
@@ -103,7 +103,6 @@ window.siteContent = {
       'Anandshekar',
       'Atul Joshi',
       'Debal Mitra',
-      'Harish Mohan',
       'Jayanandan P',
       'Haimanti Sarkar',
       'Phani Chiguluri',
